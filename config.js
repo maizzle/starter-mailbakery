@@ -150,6 +150,7 @@ module.exports = {
 
     removeUnusedCSS: {
       enabled: false,
+      doNotRemoveHTMLCommentsWhoseOpeningTagContains: ['*|', '[if', '[endif'],
     },
 
     /*
@@ -162,7 +163,10 @@ module.exports = {
     |
     */
 
-    replaceStrings: false,
+    replaceStrings: {
+      '\\n\\n': '\n',
+      '\\n<!-->': '<!-->',
+    },
 
     /*
     |-----------------------------------------------------------------------------

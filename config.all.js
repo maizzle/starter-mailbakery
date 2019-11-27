@@ -15,10 +15,6 @@ module.exports = {
   cleanup: {
     removeUnusedCSS: {
       enabled: true,
-      doNotRemoveHTMLCommentsWhoseOpeningTagContains: ["*|"],
-    },
-    replaceStrings: {
-      '\\s(style|class)(=""|(?=>)|(?=\\s))+': '', // remove empty style or class attributes
     },
   },
 
