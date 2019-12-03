@@ -1,0 +1,842 @@
+---
+title: "Be Shoppy"
+bodyClass: bg-gray-bs-900
+preheader: "Last day to get free shipping on all orders."
+googleFonts: "Playfair+Display:400,400i,700,700i,900,900i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
+---
+
+{% block template %}
+<table class="wrapper w-full all-font-raleway bg-gray-bs-900">
+  <tr>
+    <td align="center" class="align-top">
+      <!-- Header -->
+      <table class="w-full bg-gray-bs-800">
+        <tr>
+          <td align="center" class="py-12 sm-py-30 sm-px-15">
+            <table class="w-650 sm-w-full">
+              <tr>
+                <td class="w-full text-0 leading-0">
+                  <table class="w-full">
+                    <tr>
+                      <th class="w-325 font-normal align-top text-0 leading-0 sm-w-full sm-block sm-pb-10">
+                        <table class="w-full">
+                          <tr>
+                            <td align="left">
+                              <table class="text-center sm-mx-auto">
+                                <tr>
+                                  <td class="w-20">
+                                    <table>
+                                      <tr>
+                                        <td class="w-15">
+                                          <div class="h-px bg-gray-bs-divider leading-px">&zwnj;</div>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                  <td class="text-left sm-text-center text-12 leading-16 text-gray-bs-300">
+                                    <multiline>free shipping on all orders</multiline>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </th>
+                      <th class="w-325 font-normal sm-w-full sm-block text-0 leading-0">
+                        <table class="w-full">
+                          <tr>
+                            <td align="right">
+                              <table class="text-center sm-mx-auto">
+                                <tr>
+                                  <td class="w-20">
+                                    <table>
+                                      <tr>
+                                        <td class="w-15">
+                                          <div class="h-px bg-gray-bs-divider leading-px">&zwnj;</div>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                  <td class="pr-20 text-left text-12 leading-16">
+                                    <multiline>
+                                      <webversion class="no-underline text-gray-bs-300">web view</webversion>
+                                    </multiline>
+                                  </td>
+                                  <td class="w-20">
+                                    <table>
+                                      <tr>
+                                        <td class="w-15">
+                                          <div class="h-px bg-gray-bs-divider leading-px">&zwnj;</div>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                  <td class="text-left text-12 leading-16">
+                                    <multiline>
+                                      <forwardtoafriend class="no-underline text-gray-bs-300">forward</forwardtoafriend>
+                                    </multiline>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </th>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <!-- Logo + Social Icons -->
+      <table class="w-full">
+        <tr>
+          <td align="center" class="py-30 sm-px-15">
+            <table class="w-650 sm-w-full text-0 leading-0">
+              <tr>
+                <td class="w-full">
+                  <table class="w-full">
+                    <tr>
+                      <th class="w-140 sm-w-full sm-block sm-pb-30 text-0 leading-0">
+                        <a href="https://example.com">
+                          <img editable src="be-shoppy/logo.jpg" width="172" alt="Be Shoppy">
+                        </a>
+                      </th>
+                      <th class="font-normal sm-w-full sm-block text-0 leading-0">
+                        <table class="w-full">
+                          <tr>
+                            <td align="right">
+                              <table class="text-right sm-mx-auto sm-text-center">
+                                <tr>
+                                  <td class="w-36">
+                                    <a href="https://example.com">
+                                      <img editable src="be-shoppy/ico_grey_facebook.png" width="15" height="14" alt="">
+                                    </a>
+                                  </td>
+                                  <td class="w-36">
+                                    <a href="https://example.com">
+                                      <img editable src="be-shoppy/ico_grey_twitter.png" width="15" height="14" alt="">
+                                    </a>
+                                  </td>
+                                  <td class="w-36">
+                                    <a href="https://example.com">
+                                      <img editable src="be-shoppy/ico_grey_gplus.png" width="15" height="14" alt="">
+                                    </a>
+                                  </td>
+                                  <td class="w-36">
+                                    <a href="https://example.com">
+                                      <img editable src="be-shoppy/ico_grey_instagram.png" width="15" height="14" alt="">
+                                    </a>
+                                  </td>
+                                  <td class="w-36">
+                                    <a href="https://example.com">
+                                      <img editable src="be-shoppy/ico_grey_pinterest.png" width="15" height="14" alt="">
+                                    </a>
+                                  </td>
+                                  <td class="w-36">
+                                    <a href="https://example.com">
+                                      <img editable src="be-shoppy/ico_grey_linkedin.png" width="15" height="14" alt="">
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </th>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <repeater>
+        <!-- Intro -->
+        <layout label="Intro">
+        	<table class="w-full">
+        	  <tr>
+        	    <td align="center">
+        	      <table class="w-650 sm-w-full text-0 leading-0">
+        	        <tr>
+        	          <td class="w-full">
+        	            <table class="w-full">
+        	              <tr>
+        	                <td class="align-top bg-orange-bs-hero" height="420" style="background-image: url('be-shoppy/free_bg.jpg');">
+        	                  <!--[if gte mso 9]>
+        	                  <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:650px; height: 420px;">
+        	                    <v:fill type="frame" src="be-shoppy/free_bg.jpg" color="#a3854b" />
+        	                    <v:textbox inset="0,0,0,0">
+        	                  <![endif]-->
+        	                  <div>
+        	                    <table class="w-full">
+        	                      <tr>
+        	                        <td class="w-30 sm-w-15 text-0 leading-0"></td>
+        	                        <td class="py-40 sm-py-30 sm-px-15">
+        	                          <table class="w-full">
+        	                            <tr>
+        	                              <td class="bg-white py-45" align="center">
+        	                                <table>
+        	                                  <tr>
+        	                                    <td class="pb-20 text-center text-black uppercase text-26 leading-30 all-font-playfair-display">
+                                                <multiline>LAST DAY !</multiline>
+                                              </td>
+        	                                  </tr>
+        	                                  <tr>
+        	                                    <td class="pb-20 text-center">
+        	                                      <h1 class="m-0 text-black uppercase text-50 sm-text-44 leading-54 sm-leading-48 all-font-playfair-display">
+                                                  <singleline>FREE SHIPPING!</singleline>
+                                                </h1>
+        	                                    </td>
+        	                                  </tr>
+        	                                  <tr>
+        	                                    <td class="text-center pb-30 text-20 leading-24 text-gray-bs-300">
+        	                                      <multiline>
+                                                  <p class="m-0">
+                                                    Today's the last day to get free shipping!
+                                                    <br>
+                                                    Free shipping on all orders over <strong>$200</strong>.
+                                                  </p>
+                                                </multiline>
+        	                                    </td>
+        	                                  </tr>
+        	                                  <tr>
+        	                                    <td align="center">
+        	                                      <table>
+        	                                        <tr>
+        	                                          <th class="font-normal bg-black hover-bg-gray-bs-800" style="mso-padding-alt: 12px 36px;">
+        	                                            <multiline>
+                                                        <a href="https://example.com" class="block text-white no-underline uppercase py-14 px-36 text-12 leading-full">Shop Now</a>
+                                                      </multiline>
+        	                                          </th>
+        	                                        </tr>
+        	                                      </table>
+        	                                    </td>
+        	                                  </tr>
+        	                                </table>
+        	                              </td>
+        	                            </tr>
+        	                          </table>
+        	                        </td>
+        	                        <td class="w-30 sm-w-15 text-0 leading-0"></td>
+        	                      </tr>
+        	                    </table>
+        	                  </div>
+        	                  <!--[if gte mso 9]>
+        	                    </v:textbox>
+        	                    </v:rect>
+        	                  <![endif]-->
+        	                </td>
+        	              </tr>
+        	            </table>
+        	          </td>
+        	        </tr>
+        	      </table>
+        	    </td>
+        	  </tr>
+        	</table>
+        </layout>
+        <!-- Offers -->
+        <layout label="Offers">
+        	<table class="w-full">
+        	  <tr>
+        	    <td align="center" class="py-60 sm-py-30 sm-px-15">
+        	      <table class="w-650 sm-w-full text-0 leading-0">
+        	        <tr>
+        	          <td class="w-full">
+        	            <table class="w-full">
+        	              <tr>
+        	                <td align="center" class="pb-40">
+        	                  <table>
+        	                    <tr>
+        	                      <td width="60">
+        	                        <table>
+        	                          <tr>
+        	                            <td class="w-50">
+        	                              <div class="h-px bg-white leading-px">&zwnj;</div>
+        	                            </td>
+        	                          </tr>
+        	                        </table>
+        	                      </td>
+        	                      <td class="text-left text-white text-32 sm-text-24 leading-32 sm-leading-28">
+                                  <singleline>choose your fave</singleline>
+                                </td>
+        	                    </tr>
+        	                  </table>
+        	                </td>
+        	              </tr>
+        	              <tr>
+        	                <td>
+        	                  <table class="w-full">
+        	                    <tr>
+        	                      <th class="w-210 font-normal text-left align-top text-0 leading-0 sm-w-full sm-block">
+        	                        <table class="w-full">
+        	                          <tr>
+        	                            <td class="pb-20 sm-text-center">
+        	                              <img editable src="be-shoppy/t5_image3.jpg" width="210" alt="">
+        	                            </td>
+        	                          </tr>
+        	                          <tr>
+        	                            <td class="pb-10 text-center all-font-playfair-display">
+        	                              <h3 class="m-0 font-normal text-white uppercase text-22 leading-28">
+                                          <singleline>Artemis Dress</singleline>
+                                        </h3>
+        	                            </td>
+        	                          </tr>
+        	                          <tr>
+        	                            <td class="pb-10 text-center text-14 leading-24 text-gray-bs-300">
+        	                              <multiline>
+                                          <p class="m-0">This gorgeous dress is such a must-have for the new season!</p>
+                                        </multiline>
+        	                            </td>
+        	                          </tr>
+        	                          <tr>
+        	                            <td class="pb-20 text-center text-14 leading-24 text-gray-bs-300">
+        	                              <multiline>
+                                          <p class="m-0">
+                                            <strong class="text-yellow-bs-price">$89.00</strong> &nbsp; <span class="line-through">$145.00</span>
+                                          </p>
+                                        </multiline>
+        	                            </td>
+        	                          </tr>
+        	                          <tr>
+        	                            <td align="center">
+        	                              <table>
+        	                                <tr>
+        	                                  <th class="font-normal border-2 border-white border-solid hover-border-yellow-bs-price" style="mso-padding-alt: 14px 30px;">
+        	                                    <multiline>
+                                                <a href="https://example.com" class="block text-white no-underline uppercase py-14 px-30 text-12 hover-text-yellow-bs-price leading-full">Shop Now</a>
+                                              </multiline>
+        	                                  </th>
+        	                                </tr>
+        	                              </table>
+        	                            </td>
+        	                          </tr>
+        	                        </table>
+        	                      </th>
+        	                      <th class="w-10 sm-w-full sm-block sm-h-30"></th>
+        	                      <th class="w-210 font-normal text-left align-top sm-w-full sm-block">
+        	                        <table class="w-full">
+        	                          <tr>
+        	                            <td class="pb-20 sm-text-center">
+        	                              <img editable src="be-shoppy/t5_image4.jpg" width="210" alt="">
+        	                            </td>
+        	                          </tr>
+        	                          <tr>
+        	                              <td class="pb-10 text-center all-font-playfair-display">
+        	                                <h3 class="m-0 font-normal text-white uppercase text-22 leading-28">
+                                            <singleline>Happy Days</singleline>
+                                          </h3>
+        	                            </tr>
+        	                            <tr>
+        	                              <td class="pb-10 text-center text-14 leading-24 text-gray-bs-300">
+        	                                <multiline>
+                                            <p class="m-0">This gorgeous dress is such a must-have for the new season!</p>
+                                          </multiline>
+        	                              </td>
+        	                            </tr>
+        	                            <tr>
+        	                              <td class="pb-20 text-center text-14 leading-24 text-gray-bs-300">
+        	                                <multiline>
+                                            <p class="m-0">
+                                              <strong class="text-yellow-bs-price">$89.00</strong> &nbsp; <span class="line-through">$145.00</span>
+                                            </p>
+                                          </multiline>
+        	                              </td>
+        	                            </tr>
+        	                            <tr>
+        	                              <td align="center">
+        	                                <table>
+        	                                  <tr>
+        	                                    <th class="font-normal border-2 border-white border-solid hover-border-yellow-bs-price" style="mso-padding-alt: 14px 30px;">
+        	                                      <multiline>
+                                                  <a href="https://example.com" class="block text-white no-underline uppercase py-14 px-30 text-12 hover-text-yellow-bs-price leading-full">Shop Now</a>
+                                                </multiline>
+        	                                    </th>
+        	                                  </tr>
+        	                                </table>
+        	                              </td>
+        	                            </tr>
+        	                        </table>
+        	                      </th>
+        	                      <th class="w-10 sm-w-full sm-block sm-h-30"></th>
+        	                      <th class="w-210 font-normal text-left align-top sm-w-full sm-block">
+        	                        <table class="w-full">
+        	                          <tr>
+        	                            <td class="pb-20 sm-text-center">
+        	                              <img editable src="be-shoppy/t5_image5.jpg" width="210" alt="">
+        	                            </td>
+        	                          </tr>
+        	                          <tr>
+        	                              <td class="pb-10 text-center all-font-playfair-display">
+        	                                <h3 class="m-0 font-normal text-white uppercase text-22 leading-28">
+                                            <singleline>Iris Dress</singleline>
+                                          </h3>
+        	                              </td>
+        	                            </tr>
+        	                            <tr>
+        	                              <td class="pb-10 text-center text-14 leading-24 text-gray-bs-300">
+        	                                <multiline>
+                                            <p class="m-0">This gorgeous dress is such a must-have for the new season!</p>
+                                          </multiline>
+        	                              </td>
+        	                            </tr>
+        	                            <tr>
+        	                              <td class="pb-20 text-center text-14 leading-24 text-gray-bs-300">
+        	                                <multiline>
+                                            <p class="m-0">
+                                              <strong class="text-yellow-bs-price">$89.00</strong> &nbsp; <span class="line-through">$145.00</span>
+                                            </p>
+                                          </multiline>
+        	                              </td>
+        	                            </tr>
+        	                            <tr>
+        	                              <td align="center">
+        	                                <table>
+        	                                  <tr>
+        	                                    <th class="font-normal border-2 border-white border-solid hover-border-yellow-bs-price" style="mso-padding-alt: 14px 30px;">
+        	                                      <multiline>
+                                                  <a href="https://example.com" class="block text-white no-underline uppercase py-14 px-30 text-12 hover-text-yellow-bs-price leading-full">Shop Now</a>
+                                                </multiline>
+        	                                    </th>
+        	                                  </tr>
+        	                                </table>
+        	                              </td>
+        	                            </tr>
+        	                        </table>
+        	                      </th>
+        	                    </tr>
+        	                  </table>
+        	                </td>
+        	              </tr>
+        	            </table>
+        	          </td>
+        	        </tr>
+        	      </table>
+        	    </td>
+        	  </tr>
+        	</table>
+        </layout>
+        <!-- Product / Image On The Left -->
+        <layout label="Product / Image On The Left">
+        	<table class="w-full">
+        	  <tr>
+        	    <td class="pb-50 sm-pt-30 sm-px-15 sm-pb-0">
+        	      <table class="w-full bg-gray-bs-900">
+        	        <tr>
+        	          <td class="text-left content-spacing bg-yellow-bs-price text-0pt leading-0pt">&nbsp;</td>
+        	          <td class="w-650 sm-w-full">
+        	            <table class="w-full">
+        	              <tr>
+        	                <td>
+        	                  <div class="sm-hidden">
+        	                    <table class="w-full">
+        	                      <tr>
+        	                        <td class="w-205 h-80 text-0pt leading-0pt bg-yellow-bs-price">&nbsp;</td>
+        	                        <td class="bg-gray-bs-900"></td>
+        	                      </tr>
+        	                    </table>
+        	                  </div>
+        	                  <!-- Content -->
+        	                  <table class="w-full">
+        	                    <tr>
+        	                      <th class="w-256 sm-w-full sm-block">
+        	                        <table class="w-full">
+        	                          <tr>
+        	                            <td>
+        	                              <img editable src="be-shoppy/t2_image2.jpg" width="256" alt="" class="sm-w-full">
+        	                            </td>
+        	                          </tr>
+        	                        </table>
+        	                      </th>
+        	                      <th class="w-69 sm-w-full sm-block"></th>
+        	                      <th class="w-325 sm-w-full sm-block">
+        	                        <table class="w-full">
+        	                          <tr>
+        	                            <td class="sm-py-30 sm-px-15">
+        	                              <table class="w-full">
+        	                                <tr>
+        	                                  <td class="pb-10 text-left all-font-playfair-display">
+        	                                    <h2 class="m-0 text-white uppercase text-50 sm-text-44 leading-54">
+        	                                      <multiline>
+                                                  CHECKED
+                                                  <br class="sm-hidden">
+                                                  TUNIC
+                                                </multiline>
+        	                                    </h2>
+        	                                  </td>
+        	                                </tr>
+        	                                <tr>
+        	                                  <td class="text-left uppercase pb-30 all-font-playfair-display text-32 sm-text-24 leading-36 text-yellow-bs-price">
+                                              <singleline>save over 50%</singleline>
+                                            </td>
+        	                                </tr>
+        	                                <tr>
+        	                                  <td class="pb-40">
+        	                                    <table class="w-full">
+        	                                      <tr>
+        	                                        <td class="w-px align-top">
+        	                                          <table>
+        	                                            <tr>
+        	                                              <td class="w-px bg-gray-bs-divider h-54"></td>
+        	                                            </tr>
+        	                                          </table>
+        	                                        </td>
+        	                                        <td class="w-32 sm-w-15"></td>
+        	                                        <td class="align-top">
+        	                                          <table class="w-full">
+        	                                            <tr>
+        	                                              <td class="font-normal text-left pb-30 text-14 leading-24 text-gray-bs-300">
+        	                                                <multiline>
+                                                            <p class="m-0">
+                                                              Round neck midi dress with sleeves falling below the elbow with pleated details. Features a matching fabric belt, side vents at the hem, button fastening in the back hidden by a placket.
+                                                            </p>
+                                                          </multiline>
+        	                                              </td>
+        	                                            </tr>
+        	                                            <tr>
+        	                                              <td class="text-base font-normal text-left leading-24 text-gray-bs-300">
+        	                                                <multiline>
+                                                            <p class="m-0">
+                                                              Price: <strong class="text-yellow-bs-price">$89.00</strong> <span class="line-through text-14 text-gray-bs-300">$180.00</span>
+                                                            </p>
+                                                          </multiline>
+        	                                              </td>
+        	                                            </tr>
+        	                                          </table>
+        	                                        </td>
+        	                                      </tr>
+        	                                    </table>
+        	                                  </td>
+        	                                </tr>
+        	                                <tr>
+        	                                  <td align="left">
+        	                                    <table>
+        	                                      <tr>
+        	                                        <th class="font-normal border-2 border-white border-solid hover-border-yellow-bs-price" style="mso-padding-alt: 14px 36px;">
+        	                                          <multiline>
+                                                      <a href="https://example.com" class="block text-white no-underline uppercase py-14 px-36 text-12 hover-text-yellow-bs-price leading-full">Shop Now</a>
+                                                    </multiline>
+        	                                        </th>
+        	                                      </tr>
+        	                                    </table>
+        	                                  </td>
+        	                                </tr>
+        	                              </table>
+        	                            </td>
+        	                          </tr>
+        	                        </table>
+        	                      </th>
+        	                    </tr>
+        	                  </table>
+        	                  <!-- END Content -->
+        	                  <div class="sm-hidden">
+        	                    <table class="w-full">
+        	                      <tr>
+        	                        <td class="w-205 h-80 text-0pt leading-0pt bg-yellow-bs-price">&nbsp;</td>
+        	                        <td class="bg-gray-bs-900"></td>
+        	                      </tr>
+        	                    </table>
+        	                  </div>
+        	                </td>
+        	              </tr>
+        	            </table>
+        	          </td>
+        	          <td class="sm-w-15 text-0pt leading-0pt bg-gray-bs-900">&nbsp;</td>
+        	        </tr>
+        	      </table>
+        	    </td>
+        	  </tr>
+        	</table>
+        </layout>
+        <!-- Product / Image On The Right -->
+        <layout label="Product / Image On The Right">
+        	<table class="w-full">
+        	  <tr>
+        	    <td class="pb-50 sm-pt-30 sm-px-15 sm-pb-0">
+        	      <table class="w-full bg-gray-bs-900">
+        	        <tr>
+        	          <td class="sm-w-15 text-0pt leading-0pt bg-gray-bs-900">&nbsp;</td>
+        	          <td class="w-650 sm-w-full">
+        	            <table class="w-650 sm-w-full">
+        	              <tr>
+        	                <td>
+        	                  <div class="sm-hidden">
+        	                    <table class="w-full">
+        	                      <tr>
+        	                        <td class="bg-gray-bs-900"></td>
+        	                        <td class="w-205 h-80 text-0pt leading-0pt bg-yellow-bs-price">&nbsp;</td>
+        	                      </tr>
+        	                    </table>
+        	                  </div>
+        	                  <!-- Content -->
+        	                  <table class="w-full" dir="rtl">
+        	                    <tr>
+        	                      <th class="w-256 sm-w-full sm-block" dir="ltr">
+        	                        <table class="w-full">
+        	                          <tr>
+        	                            <td>
+        	                              <img editable src="be-shoppy/t2_image3.jpg" width="256" alt="" class="sm-w-full">
+        	                            </td>
+        	                          </tr>
+        	                        </table>
+        	                      </th>
+        	                      <th class="w-69 sm-w-full sm-block" dir="ltr"></th>
+        	                      <th class="w-325 sm-w-full sm-block" dir="ltr">
+        	                        <table class="w-full">
+        	                          <tr>
+        	                            <td class="sm-py-30 sm-px-15">
+        	                              <table class="w-full">
+        	                                <tr>
+        	                                  <td class="pb-10 text-left all-font-playfair-display">
+        	                                    <h2 class="m-0 text-white uppercase text-50 sm-text-44 leading-54">
+        	                                      <multiline>
+                                                  Contrast
+                                                  <br class="sm-hidden">
+                                                  Dress
+                                                </multiline>
+        	                                    </h2>
+        	                                  </td>
+        	                                </tr>
+        	                                <tr>
+        	                                  <td class="text-left uppercase pb-30 all-font-playfair-display text-32 sm-text-24 leading-36 text-yellow-bs-price">
+                                              <singleline>save over 50%</singleline>
+                                            </td>
+        	                                </tr>
+        	                                <tr>
+        	                                  <td class="pb-40">
+        	                                    <table class="w-full">
+        	                                      <tr>
+        	                                        <td class="w-px align-top">
+        	                                          <table>
+        	                                            <tr>
+        	                                              <td class="w-px bg-gray-bs-divider h-54"></td>
+        	                                            </tr>
+        	                                          </table>
+        	                                        </td>
+        	                                        <td class="w-32 sm-w-15"></td>
+        	                                        <td class="align-top">
+        	                                          <table class="w-full">
+        	                                            <tr>
+        	                                              <td class="font-normal text-left pb-30 text-14 leading-24 text-gray-bs-300">
+        	                                                <multiline>
+                                                            <p class="m-0">
+                                                              Round neck dress with short sleeves. Fastens in the back with zip, opening and button. Features button detailing in the front and on the sleeves.
+                                                            </p>
+                                                          </multiline>
+        	                                              </td>
+        	                                            </tr>
+        	                                            <tr>
+        	                                              <td class="text-base font-normal text-left leading-24 text-gray-bs-300">
+        	                                                <multiline>
+                                                            <p class="m-0">
+                                                              Price: <strong class="text-yellow-bs-price">$89.00</strong> <span class="line-through text-14 text-gray-bs-300">$180.00</span>
+                                                            </p>
+                                                          </multiline>
+        	                                              </td>
+        	                                            </tr>
+        	                                          </table>
+        	                                        </td>
+        	                                      </tr>
+        	                                    </table>
+        	                                  </td>
+        	                                </tr>
+        	                                <tr>
+        	                                  <td align="left">
+        	                                    <table>
+        	                                      <tr>
+        	                                        <th class="font-normal border-2 border-white border-solid hover-border-yellow-bs-price" style="mso-padding-alt: 14px 36px;">
+        	                                          <multiline>
+                                                      <a href="https://example.com" class="block text-white no-underline uppercase py-14 px-36 text-12 hover-text-yellow-bs-price leading-full">Shop Now</a>
+                                                    </multiline>
+        	                                        </th>
+        	                                      </tr>
+        	                                    </table>
+        	                                  </td>
+        	                                </tr>
+        	                              </table>
+        	                            </td>
+        	                          </tr>
+        	                        </table>
+        	                      </th>
+        	                    </tr>
+        	                  </table>
+        	                  <!-- END Content -->
+        	                  <div class="sm-hidden">
+        	                    <table class="w-full">
+        	                      <tr>
+        	                        <td class="bg-gray-bs-900"></td>
+        	                        <td class="w-205 h-80 text-0pt leading-0pt bg-yellow-bs-price">&nbsp;</td>
+        	                      </tr>
+        	                    </table>
+        	                  </div>
+        	                </td>
+        	              </tr>
+        	            </table>
+        	          </td>
+        	          <td class="sm-w-15 text-0pt leading-0pt bg-yellow-bs-price">&nbsp;</td>
+        	        </tr>
+        	      </table>
+        	    </td>
+        	  </tr>
+        	</table>
+        </layout>
+        <!-- Contacts -->
+        <layout label="Contacts">
+        	<table class="w-full">
+        	  <tr>
+        	    <td align="center" class="pb-30 sm-py-30 sm-px-15">
+        	      <table class="w-650 sm-w-full">
+        	        <tr>
+        	          <td class="w-full">
+        	            <table class="w-full">
+        	              <tr>
+        	                <th class="w-310 font-normal sm-w-full sm-block bg-gray-bs-900">
+        	                  <table class="w-full">
+        	                    <tr>
+        	                      <td class="py-45 px-30" style="border:1px solid #5a5a5a;">
+        	                        <table class="w-full">
+        	                          <tr>
+        	                            <td class="text-left w-90">
+        	                              <img editable src="be-shoppy/t6_ico1.png" width="70" alt="">
+        	                            </td>
+        	                            <td class="text-left text-white uppercase text-20 leading-28 all-font-playfair-display">
+        	                              <multiline>
+                                          <p class="m-0">
+                                            <strong>Free Delivery</strong>
+                                            <br>
+                                            <span class="text-yellow-bs-price">Over $200</span>
+                                          </p>
+                                        </multiline>
+        	                            </td>
+        	                          </tr>
+        	                        </table>
+        	                      </td>
+        	                    </tr>
+        	                  </table>
+        	                </th>
+        	                <th class="w-30 sm-w-full sm-block sm-pb-10"></th>
+        	                <th class="w-310 sm-w-full sm-block bg-gray-bs-900">
+        	                  <table class="w-full">
+        	                    <tr>
+        	                      <td class="py-45 px-30" style="border:1px solid #5a5a5a;">
+        	                        <table class="w-full">
+        	                          <tr>
+        	                            <td class="text-left w-75">
+        	                              <img editable src="be-shoppy/t6_ico2.png" width="54" alt="">
+        	                            </td>
+        	                            <td class="text-left text-white uppercase text-20 leading-28 all-font-playfair-display">
+        	                              <multiline>
+                                          <p class="m-0">
+                                            <a href="https://example.com" class="font-bold text-white no-underline">
+                                              <span class="font-bold text-white no-underline">888 569 755 698</span>
+                                            </a>
+                                            <br>
+                                            <span class="text-yellow-bs-price">Call us</span>
+                                          </p>
+                                        </multiline>
+        	                            </td>
+        	                          </tr>
+        	                        </table>
+        	                      </td>
+        	                    </tr>
+        	                  </table>
+        	                </th>
+        	              </tr>
+        	            </table>
+        	          </td>
+        	        </tr>
+        	      </table>
+        	    </td>
+        	  </tr>
+        	</table>
+        </layout>
+      </repeater>
+      <!-- Footer -->
+      <table class="w-full bg-gray-bs-800">
+        <tr>
+          <td align="center" class="py-50 sm-py-30 sm-px-15">
+            <table class="w-650 sm-w-full">
+              <tr>
+                <td class="w-full">
+                  <table class="w-full">
+                    <tr>
+                      <th class="w-180 sm-w-full sm-block">
+                        <a href="https://example.com">
+                          <img editable src="be-shoppy/free_footer_logo.jpg" width="172" alt="Logo">
+                        </a>
+                      </th>
+                      <th class="w-px sm-pb-30 sm-w-full sm-block"></th>
+                      <th class="sm-w-full sm-block">
+                        <table class="w-full">
+                          <tr>
+                            <td align="right">
+                              <table class="sm-mx-auto">
+                                <tr>
+                                  <td class="w-36">
+                                    <a href="https://example.com">
+                                      <img editable src="be-shoppy/v6_ico_facebook.jpg" width="15" alt="">
+                                    </a>
+                                  </td>
+                                  <td class="w-36">
+                                    <a href="https://example.com">
+                                      <img editable src="be-shoppy/v6_ico_twitter.jpg" width="15" alt="">
+                                    </a>
+                                  </td>
+                                  <td class="w-36">
+                                    <a href="https://example.com">
+                                      <img editable src="be-shoppy/v6_ico_gplus.jpg" width="15" alt="">
+                                    </a>
+                                  </td>
+                                  <td class="w-36">
+                                    <a href="https://example.com">
+                                      <img editable src="be-shoppy/v6_ico_instagram.jpg" width="15" alt="">
+                                    </a>
+                                  </td>
+                                  <td class="w-36">
+                                    <a href="https://example.com">
+                                      <img editable src="be-shoppy/v6_ico_pinterest.jpg" width="15" alt="">
+                                    </a>
+                                  </td>
+                                  <td class="w-15">
+                                    <a href="https://example.com">
+                                      <img editable src="be-shoppy/v6_ico_linkedin.jpg" width="15" alt="">
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </th>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <table class="w-full bg-gray-bs-900">
+        <tr>
+          <td class="px-10 text-center pt-28 pb-50 sm-py-30 sm-px-15 text-12 leading-20 text-gray-bs-500">
+            <multiline>
+              <p class="m-0">
+                Want to change how you receive these emails?
+                <br>
+                You can
+                <a href="https://example.com" class="underline hover-no-underline text-gray-bs-500">update your preferences</a>
+                or
+                <a href="https://example.com" class="underline hover-no-underline text-gray-bs-500">unsubscribe</a> from this list
+              </p>
+            </multiline>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+{% endblock %}

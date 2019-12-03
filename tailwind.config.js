@@ -26,6 +26,12 @@ module.exports = {
         900: '#1a202c',
         // Luxury Estates
         'le-500': '#889cbe',
+        // Be Shoppy
+        'bs-divider': '#ababab',
+        'bs-300': '#979797',
+        'bs-500': '#7e7e7e',
+        'bs-800': '#282828',
+        'bs-900': '#1d1d1d',
       },
       red: {
         100: '#fff5f5',
@@ -48,6 +54,8 @@ module.exports = {
         700: '#c05621',
         800: '#9c4221',
         900: '#7b341e',
+        // Be Shoppy
+        'bs-hero': '#a3854b',
       },
       yellow: {
         100: '#fffff0',
@@ -59,6 +67,8 @@ module.exports = {
         700: '#b7791f',
         800: '#975a16',
         900: '#744210',
+        // Be Shoppy
+        'bs-price': '#d1a24c',
       },
       green: {
         100: '#f0fff4',
@@ -136,6 +146,7 @@ module.exports = {
     spacing: {
       px: '1px',
       '0': 0,
+      '0pt': '0pt',
       '2': '2px',
       '3': '3px',
       '4': '4px',
@@ -161,8 +172,13 @@ module.exports = {
       '45': '45px',
       '48': '48px',
       '50': '50px',
+      '54': '54px',
+      '60': '60px',
       '65': '65px',
+      '69': '69px',
+      '75': '75px',
       '80': '80px',
+      '90': '90px',
       // Luxury Estates
       '160': '160px',
       '170': '170px',
@@ -170,6 +186,13 @@ module.exports = {
       '275': '275px',
       '370': '370px',
       '650': '650px',
+      // Be Shoppy
+      '140': '140px',
+      '205': '205px',
+      '210': '210px',
+      '256': '256px',
+      '310': '310px',
+      '325': '325px',
     },
     backgroundColor: theme => theme('colors'),
     backgroundPosition: {
@@ -251,6 +274,12 @@ module.exports = {
         '"Segoe UI"',
         'sans-serif',
       ],
+      'playfair-display': [
+        '"Playfair Display"',
+        'Constantia',
+        'Georgia',
+        'serif'
+      ],
       sans: [
         '-apple-system',
         '"Segoe UI"',
@@ -269,6 +298,7 @@ module.exports = {
     },
     fontSize: {
       '0': 0,
+      '0pt': '0pt',
       '12': '12px',
       '13': '13px',
       '14': '14px',
@@ -277,7 +307,11 @@ module.exports = {
       '18': '18px',
       '20': '20px',
       '22': '22px',
+      '24': '24px',
+      '26': '26px',
       '32': '32px',
+      '44': '44px',
+      '50': '50px',
     },
     fontWeight: {
       hairline: 100,

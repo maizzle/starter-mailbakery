@@ -21,4 +21,12 @@ module.exports = {
   prettify: {
     enabled: true,
   },
+
+  minify: {
+    enabled: false,
+    minifyCSS: true,
+    maxLineLength: 500,
+    collapseWhitespace: true,
+    processConditionalComments: true,
+  },
 }
