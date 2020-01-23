@@ -1,7 +1,7 @@
 module.exports = {
   prefix: '',
   important: true,
-  separator: '-',
+  separator: ':',
   theme: {
     screens: {
       all: {'raw': 'screen'},
@@ -32,6 +32,15 @@ module.exports = {
         'bs-500': '#7e7e7e',
         'bs-800': '#282828',
         'bs-900': '#1d1d1d',
+        // E-nthusiastic
+        'ent-100': '#c5c5c5',
+        'ent-300': '#ededed',
+        'ent-400': '#ecebeb',
+        'ent-450': '#97999b',
+        'ent-500': '#7d7e80',
+        'ent-700': '#2a3138',
+        'ent-800': '#313941',
+        'ent-900': '#1d2025',
       },
       red: {
         100: '#fff5f5',
@@ -56,6 +65,8 @@ module.exports = {
         900: '#7b341e',
         // Be Shoppy
         'bs-hero': '#a3854b',
+        // E-nthusiastic
+        'ent-500': '#d85d5c',
       },
       yellow: {
         100: '#fffff0',
@@ -152,6 +163,7 @@ module.exports = {
       '4': '4px',
       '6': '6px',
       '8': '8px',
+      '9': '9px',
       '10': '10px',
       '12': '12px',
       '14': '14px',
@@ -193,6 +205,10 @@ module.exports = {
       '256': '256px',
       '310': '310px',
       '325': '325px',
+      // E-nthusiastic
+      '144': '144px',
+      '290': '290px',
+      '320': '320px',
     },
     backgroundColor: theme => theme('colors'),
     backgroundPosition: {
@@ -268,6 +284,18 @@ module.exports = {
       default: '1',
     },
     fontFamily: {
+      'barlow-condensed': [
+        '"Barlow Condensed"',
+        '-apple-system',
+        '"Segoe UI"',
+        'sans-serif',
+      ],
+      quicksand: [
+        'Quicksand',
+        '-apple-system',
+        '"Segoe UI"',
+        'sans-serif',
+      ],
       raleway: [
         'Raleway',
         '-apple-system',
@@ -309,6 +337,7 @@ module.exports = {
       '22': '22px',
       '24': '24px',
       '26': '26px',
+      '28': '28px',
       '32': '32px',
       '44': '44px',
       '50': '50px',
@@ -342,6 +371,7 @@ module.exports = {
       'tight': '-1px',
       'normal': '0',
       'wide': '1px',
+      '3': '3px',
     },
     lineHeight: theme => ({
       ...theme('spacing'),
