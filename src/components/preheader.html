@@ -1,0 +1,10 @@
+<if condition="page.env === 'mailchimp'">
+  <!--*|IF:MC_PREVIEW_TEXT|*-->
+  <div class="hidden">{{{ page.preheader || '*|MC_PREVIEW_TEXT|*' }}}</div>
+  <!--*|END:IF|*-->
+</if>
+<else>
+  <if condition="page.preheader">
+    <div class="hidden">{{{ page.preheader }}}</div>
+  </if>
+</else>
