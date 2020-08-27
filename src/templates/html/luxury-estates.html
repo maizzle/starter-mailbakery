@@ -5,127 +5,115 @@ preheader: "Jane, here's what I found for you"
 googleFonts: "Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
 ---
 
-{% block template %}
-<table class="wrapper w-full all:font-raleway bg-blue-le-900">
-  <tr>
-    <td align="center" class="py-50 px-10 sm:p-10 align-top">
-      <table class="w-650 sm:w-full">
-        <tr>
-          <td class="w-650 sm:w-full rounded-12 bg-blue-le-800">
-            <!-- Header -->
-            <table class="w-full">
-              <tr>
-                <td class="rounded-12 bg-blue-le-700">
-                  <table class="w-full">
-                    <!-- Top Bar -->
-                    <tr>
-                      <td class="py-20 px-30 sm:py-30 sm:px-15">
-                        <table class="w-full">
-                          <tr>
-                            <td class="w-180 text-left">
-                              <a href="https://example.com" class="no-underline">
-                                <img editable src="luxury-estates/logo.png" width="160" alt="LuxuryEstates">
-                              </a>
-                            </td>
-                            <td align="right">
-                              <table>
-                                <tr>
-                                  <td class="w-22 text-left">
-                                    <img editable src="luxury-estates/ico_web.jpg" width="14" alt="">
-                                  </td>
-                                  <td class="text-13 leading-18 text-left align-bottom">
-                                    <multiline>
-                                      <webversion class="no-underline hover:underline text-white all:font-sans">view online</webversion>
-                                    </multiline>
-                                  </td>
-                                </tr>
-                              </table>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                    <!-- END Top Bar -->
-                    <!-- Person Info -->
-                    <tr>
-                      <td>
-                        <table class="w-full">
-                          <tr>
-                            <td class="p-30 pl-50 sm:py-30 sm:px-15 bg-blue-le-100 rounded-12">
-                              <table class="w-full">
-                                <tr>
-                                  <td class="w-80 text-left">
-                                    <img editable src="luxury-estates/person_image.jpg" width="80" alt="Andrew Simpson">
-                                  </td>
-                                  <td class="pl-30 sm:pl-15">
-                                    <table class="w-full">
-                                      <tr>
-                                        <td class="pb-15 text-22 leading-28 text-left font-medium text-white">
-                                          <multiline>Andrew Simpson</multiline>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td class="text-12 leading-16 text-left uppercase text-white">
-                                          <multiline>Your personal real estate broker</multiline>
-                                        </td>
-                                      </tr>
-                                    </table>
-                                  </td>
-                                </tr>
-                              </table>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="pb-45 pl-65 sm:pb-25 text-0 text-left">
-                              <img editable src="luxury-estates/blue_arrow.jpg" width="37">
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                    <!-- Person Info -->
-                    <!-- Welcome -->
-                    <tr>
-                      <td class="px-50 pb-45 sm:px-15 sm:pb-30">
-                        <table class="w-full">
-                          <tr>
-                            <td class="pb-25 text-left">
-                              <h1 class="m-0 text-32 leading-36 font-medium text-white">
-                                <singleline>Hey, Jane!</singleline>
-                              </h1>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-left">
-                              <multiline>
-                                <p class="m-0 text-15 leading-28 text-white all:font-sans">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                              </multiline>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                    <!-- END Welcome -->
-                  </table>
-                </td>
-              </tr>
-            </table>
-            <!-- END Header -->
+<extends src="src/layouts/default.html">
+  <block name="template">
+    <table class="w-full all:font-raleway bg-blue-le-900">
+      <tr>
+        <td align="center" class="py-50 px-10 sm:p-10 align-top">
+          <table class="w-650 sm:w-full">
+            <tr>
+              <td class="w-650 sm:w-full rounded-12 bg-blue-le-800">
+                <!-- Header -->
+                <table class="w-full">
+                  <tr>
+                    <td class="rounded-12 bg-blue-le-700">
+                      <table class="w-full">
+                        <!-- Top Bar -->
+                        <tr>
+                          <td class="py-20 px-30 sm:py-30 sm:px-15">
+                            <table class="w-full">
+                              <tr>
+                                <td class="w-180 text-left">
+                                  <a href="https://example.com" class="no-underline">
+                                    <img src="luxury-estates/logo.png" width="160" alt="LuxuryEstates">
+                                  </a>
+                                </td>
+                                <td align="right">
+                                  <table>
+                                    <tr>
+                                      <td class="w-22 text-left">
+                                        <img src="luxury-estates/ico_web.jpg" width="14">
+                                      </td>
+                                      <td class="text-13 leading-18 text-left align-bottom">
+                                        <a href="https://example.com" target="_blank" class="no-underline hover:underline text-white all:font-sans">
+                                          <span class="no-underline text-white">view online</span>
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <!-- END Top Bar -->
+                        <!-- Person Info -->
+                        <tr>
+                          <td>
+                            <table class="w-full">
+                              <tr>
+                                <td class="p-30 pl-50 sm:py-30 sm:px-15 bg-blue-le-100 rounded-12">
+                                  <table class="w-full">
+                                    <tr>
+                                      <td class="w-80 text-left">
+                                        <img src="luxury-estates/person_image.jpg" width="80" alt="Andrew Simpson">
+                                      </td>
+                                      <td class="pl-30 sm:pl-15">
+                                        <table class="w-full">
+                                          <tr>
+                                            <td class="pb-15 text-22 leading-28 text-left font-medium text-white">Andrew Simpson</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="text-12 leading-16 text-left uppercase text-white">Your personal real estate broker</td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="pb-45 pl-65 sm:pb-25 text-0 text-left">
+                                  <img src="luxury-estates/blue_arrow.jpg" width="37">
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <!-- Person Info -->
+                        <!-- Welcome -->
+                        <tr>
+                          <td class="px-50 pb-45 sm:px-15 sm:pb-30">
+                            <table class="w-full">
+                              <tr>
+                                <td class="pb-25 text-left">
+                                  <h1 class="m-0 text-32 leading-36 font-medium text-white">Hey, Jane!</h1>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="text-left">
+                                  <p class="m-0 text-15 leading-28 text-white all:font-sans">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <!-- END Welcome -->
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+                <!-- END Header -->
 
-            <!-- Main -->
-            <table class="w-full">
-              <tr>
-                <td class="p-50 pb-0 sm:py-30 sm:px-15">
-
-                  <repeater>
-                    <!-- Heading -->
-                    <layout label="Heading">
+                <!-- Main -->
+                <table class="w-full">
+                  <tr>
+                    <td class="p-50 pb-0 sm:py-30 sm:px-15">
+                      <!-- Heading -->
                       <table class="w-full">
                         <tr>
                           <td class="pb-25 text-left">
-                            <h3 class="m-0 text-22 leading-28 font-medium text-blue-le-50">
-                              <singleline>Here's what I found for you:</singleline>
-                            </h3>
+                            <h3 class="m-0 text-22 leading-28 font-medium text-blue-le-50">Here's what I found for you:</h3>
                           </td>
                         </tr>
                         <tr>
@@ -140,17 +128,13 @@ googleFonts: "Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
                           </td>
                         </tr>
                       </table>
-                    </layout>
-                    <!-- END Heading -->
+                      <!-- END Heading -->
 
-                    <!-- Article 1 -->
-                    <layout label="Article 1">
+                      <!-- Article 1 -->
                       <table class="w-full">
                         <tr>
                           <td class="pb-35 text-left">
-                            <h4 class="m-0 text-20 leading-26 font-semibold text-white">
-                              <singleline>4578 Marmora Road, Glasgow D04 89GR</singleline>
-                            </h4>
+                            <h4 class="m-0 text-20 leading-26 font-semibold text-white">4578 Marmora Road, Glasgow D04 89GR</h4>
                           </td>
                         </tr>
                         <tr>
@@ -158,7 +142,7 @@ googleFonts: "Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
                             <table class="w-full">
                               <tr>
                                 <th class="w-275 sm:block sm:w-full sm:pb-25 rounded-12">
-                                  <img editable src="luxury-estates/image1.jpg" width="275" alt="Marmora Road: Kitchen" class="sm:w-full rounded-12">
+                                  <img src="luxury-estates/image1.jpg" width="275" alt="Marmora Road: Kitchen" class="sm:w-full rounded-12">
                                 </th>
                                 <th class="pl-50 sm:p-0 sm:block sm:w-full font-normal">
                                   <table class="w-full">
@@ -176,9 +160,7 @@ googleFonts: "Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
                                               </table>
                                             </td>
                                             <td class="text-left">
-                                              <multiline>
-                                                <p class="m-0 text-15 leading-28 text-white all:font-sans">2-bedroom apartment</p>
-                                              </multiline>
+                                              <p class="m-0 text-15 leading-28 text-white all:font-sans">2-bedroom apartment</p>
                                             </td>
                                           </tr>
                                         </table>
@@ -198,9 +180,7 @@ googleFonts: "Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
                                               </table>
                                             </td>
                                             <td class="text-left">
-                                              <multiline>
-                                                <p class="m-0 text-15 leading-28 text-white all:font-sans">1 bed, 1 bath, 700sqft</p>
-                                              </multiline>
+                                              <p class="m-0 text-15 leading-28 text-white all:font-sans">1 bed, 1 bath, 700sqft</p>
                                             </td>
                                           </tr>
                                         </table>
@@ -220,9 +200,7 @@ googleFonts: "Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
                                               </table>
                                             </td>
                                             <td class="text-left">
-                                              <multiline>
-                                                <p class="m-0 text-15 leading-28 text-white all:font-sans">Nicely Updated Kitchen</p>
-                                              </multiline>
+                                              <p class="m-0 text-15 leading-28 text-white all:font-sans">Nicely Updated Kitchen</p>
                                             </td>
                                           </tr>
                                         </table>
@@ -242,9 +220,7 @@ googleFonts: "Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
                                               </table>
                                             </td>
                                             <td class="text-left">
-                                              <multiline>
-                                                <p class="m-0 text-15 leading-28 text-white all:font-sans">Newly Updated Bathroom</p>
-                                              </multiline>
+                                              <p class="m-0 text-15 leading-28 text-white all:font-sans">Newly Updated Bathroom</p>
                                             </td>
                                           </tr>
                                         </table>
@@ -264,9 +240,7 @@ googleFonts: "Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
                                               </table>
                                             </td>
                                             <td class="text-left">
-                                              <multiline>
-                                                <p class="m-0 text-15 leading-28 text-white all:font-sans">Hardwood Flooring</p>
-                                              </multiline>
+                                              <p class="m-0 text-15 leading-28 text-white all:font-sans">Hardwood Flooring</p>
                                             </td>
                                           </tr>
                                         </table>
@@ -286,9 +260,7 @@ googleFonts: "Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
                                               </table>
                                             </td>
                                             <td class="text-left">
-                                              <multiline>
-                                                <p class="m-0 text-15 leading-28 text-white all:font-sans">Large King Sized Bedroom</p>
-                                              </multiline>
+                                              <p class="m-0 text-15 leading-28 text-white all:font-sans">Large King Sized Bedroom</p>
                                             </td>
                                           </tr>
                                         </table>
@@ -302,9 +274,7 @@ googleFonts: "Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
                         </tr>
                         <tr>
                           <td class="pb-35 text-left">
-                            <multiline>
-                              <p class="m-0 text-15 leading-28 text-white all:font-sans">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                            </multiline>
+                            <p class="m-0 text-15 leading-28 text-white all:font-sans">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
                           </td>
                         </tr>
                         <tr>
@@ -315,8 +285,8 @@ googleFonts: "Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
                                   <table class="w-full">
                                     <tr>
                                       <td class="py-10 px-20 leading-22 text-left font-bold text-white">
-                                        <span class="text-18"><singleline>$2,000</singleline></span>
-                                        <span class="text-14 font-normal"><singleline>/mo</singleline></span>
+                                        <span class="text-18">$2,000</span>
+                                        <span class="text-14 font-normal">/mo</span>
                                       </td>
                                     </tr>
                                   </table>
@@ -325,9 +295,7 @@ googleFonts: "Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
                                   <table>
                                     <tr>
                                       <th class="bg-blue-le-100 hover:bg-blue-le-700 rounded-12" style="mso-padding-alt: 12px 25px;">
-                                        <multiline>
-                                          <a href="https://example.com" class="block py-12 px-25 text-14 leading-20 no-underline text-white">MORE DETAILS</a>
-                                        </multiline>
+                                        <a href="https://example.com" class="block py-12 px-25 text-14 leading-20 no-underline text-white">MORE DETAILS</a>
                                       </th>
                                     </tr>
                                   </table>
@@ -340,17 +308,13 @@ googleFonts: "Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
                           <td class="h-40 sm:hidden"></td>
                         </tr>
                       </table>
-                    </layout>
-                    <!-- END Article 1 -->
+                      <!-- END Article 1 -->
 
-                    <!-- Article 2 -->
-                    <layout label="Article 2">
+                      <!-- Article 2 -->
                       <table class="w-full">
                         <tr>
                           <td class="pb-35 text-left">
-                            <h4 class="m-0 text-20 leading-26 font-semibold text-white">
-                              <singleline>4578 Marmora Road, Glasgow D04 89GR</singleline>
-                            </h4>
+                            <h4 class="m-0 text-20 leading-26 font-semibold text-white">4578 Marmora Road, Glasgow D04 89GR</h4>
                           </td>
                         </tr>
                         <tr>
@@ -358,7 +322,7 @@ googleFonts: "Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
                             <table class="w-full">
                               <tr>
                                 <th class="w-275 sm:block sm:w-full sm:pb-25 rounded-12">
-                                  <img editable src="luxury-estates/image2.jpg" width="275" alt="Marmora Road: Studio" class="sm:w-full rounded-12">
+                                  <img src="luxury-estates/image2.jpg" width="275" alt="Marmora Road: Studio" class="sm:w-full rounded-12">
                                 </th>
                                 <th class="pl-50 sm:p-0 sm:block sm:w-full font-normal">
                                   <table class="w-full">
@@ -376,9 +340,7 @@ googleFonts: "Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
                                               </table>
                                             </td>
                                             <td class="text-left">
-                                              <multiline>
-                                                <p class="m-0 text-15 leading-28 text-white all:font-sans">2-bedroom apartment</p>
-                                              </multiline>
+                                              <p class="m-0 text-15 leading-28 text-white all:font-sans">2-bedroom apartment</p>
                                             </td>
                                           </tr>
                                         </table>
@@ -398,9 +360,7 @@ googleFonts: "Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
                                               </table>
                                             </td>
                                             <td class="text-left">
-                                              <multiline>
-                                                <p class="m-0 text-15 leading-28 text-white all:font-sans">1 bed, 1 bath, 700sqft</p>
-                                              </multiline>
+                                              <p class="m-0 text-15 leading-28 text-white all:font-sans">1 bed, 1 bath, 700sqft</p>
                                             </td>
                                           </tr>
                                         </table>
@@ -420,9 +380,7 @@ googleFonts: "Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
                                               </table>
                                             </td>
                                             <td class="text-left">
-                                              <multiline>
-                                                <p class="m-0 text-15 leading-28 text-white all:font-sans">Nicely Updated Kitchen</p>
-                                              </multiline>
+                                              <p class="m-0 text-15 leading-28 text-white all:font-sans">Nicely Updated Kitchen</p>
                                             </td>
                                           </tr>
                                         </table>
@@ -442,9 +400,7 @@ googleFonts: "Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
                                               </table>
                                             </td>
                                             <td class="text-left">
-                                              <multiline>
-                                                <p class="m-0 text-15 leading-28 text-white all:font-sans">Newly Updated Bathroom</p>
-                                              </multiline>
+                                              <p class="m-0 text-15 leading-28 text-white all:font-sans">Newly Updated Bathroom</p>
                                             </td>
                                           </tr>
                                         </table>
@@ -464,9 +420,7 @@ googleFonts: "Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
                                               </table>
                                             </td>
                                             <td class="text-left">
-                                              <multiline>
-                                                <p class="m-0 text-15 leading-28 text-white all:font-sans">Hardwood Flooring</p>
-                                              </multiline>
+                                              <p class="m-0 text-15 leading-28 text-white all:font-sans">Hardwood Flooring</p>
                                             </td>
                                           </tr>
                                         </table>
@@ -486,9 +440,7 @@ googleFonts: "Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
                                               </table>
                                             </td>
                                             <td class="text-left">
-                                              <multiline>
-                                                <p class="m-0 text-15 leading-28 text-white all:font-sans">Large King Sized Bedroom</p>
-                                              </multiline>
+                                              <p class="m-0 text-15 leading-28 text-white all:font-sans">Large King Sized Bedroom</p>
                                             </td>
                                           </tr>
                                         </table>
@@ -502,9 +454,7 @@ googleFonts: "Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
                         </tr>
                         <tr>
                           <td class="pb-35 text-left">
-                            <multiline>
-                              <p class="m-0 text-15 leading-28 text-white all:font-sans">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                            </multiline>
+                            <p class="m-0 text-15 leading-28 text-white all:font-sans">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
                           </td>
                         </tr>
                         <tr>
@@ -515,8 +465,8 @@ googleFonts: "Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
                                   <table class="w-full">
                                     <tr>
                                       <td class="py-10 px-20 leading-22 text-left font-bold text-white">
-                                        <span class="text-18"><singleline>$2,000</singleline></span>
-                                        <span class="text-14 font-normal"><singleline>/mo</singleline></span>
+                                        <span class="text-18">$2,000</span>
+                                        <span class="text-14 font-normal">/mo</span>
                                       </td>
                                     </tr>
                                   </table>
@@ -525,9 +475,7 @@ googleFonts: "Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
                                   <table>
                                     <tr>
                                       <th class="bg-blue-le-100 hover:bg-blue-le-700 rounded-12" style="mso-padding-alt: 12px 25px;">
-                                        <multiline>
-                                          <a href="https://example.com" class="block py-12 px-25 text-14 leading-20 no-underline text-white">MORE DETAILS</a>
-                                        </multiline>
+                                        <a href="https://example.com" class="block py-12 px-25 text-14 leading-20 no-underline text-white">MORE DETAILS</a>
                                       </th>
                                     </tr>
                                   </table>
@@ -540,17 +488,13 @@ googleFonts: "Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
                           <td class="h-40 sm:hidden"></td>
                         </tr>
                       </table>
-                    </layout>
-                    <!-- END Article 2 -->
+                      <!-- END Article 2 -->
 
-                    <!-- Article 3 -->
-                    <layout label="Article 3">
+                      <!-- Article 3 -->
                       <table class="w-full">
                         <tr>
                           <td class="pb-35 text-left">
-                            <h4 class="m-0 text-20 leading-26 font-semibold text-white">
-                              <singleline>4578 Marmora Road, Glasgow D04 89GR</singleline>
-                            </h4>
+                            <h4 class="m-0 text-20 leading-26 font-semibold text-white">4578 Marmora Road, Glasgow D04 89GR</h4>
                           </td>
                         </tr>
                         <tr>
@@ -558,7 +502,7 @@ googleFonts: "Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
                             <table class="w-full">
                               <tr>
                                 <th class="w-275 sm:block sm:w-full sm:pb-25 rounded-12">
-                                  <img editable src="luxury-estates/image3.jpg" width="275" alt="Marmora Road: Living Room" class="sm:w-full rounded-12">
+                                  <img src="luxury-estates/image3.jpg" width="275" alt="Marmora Road: Living Room" class="sm:w-full rounded-12">
                                 </th>
                                 <th class="pl-50 sm:p-0 sm:block sm:w-full font-normal">
                                   <table class="w-full">
@@ -576,9 +520,7 @@ googleFonts: "Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
                                               </table>
                                             </td>
                                             <td class="text-left">
-                                              <multiline>
-                                                <p class="m-0 text-15 leading-28 text-white all:font-sans">2-bedroom apartment</p>
-                                              </multiline>
+                                              <p class="m-0 text-15 leading-28 text-white all:font-sans">2-bedroom apartment</p>
                                             </td>
                                           </tr>
                                         </table>
@@ -598,9 +540,7 @@ googleFonts: "Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
                                               </table>
                                             </td>
                                             <td class="text-left">
-                                              <multiline>
-                                                <p class="m-0 text-15 leading-28 text-white all:font-sans">1 bed, 1 bath, 700sqft</p>
-                                              </multiline>
+                                              <p class="m-0 text-15 leading-28 text-white all:font-sans">1 bed, 1 bath, 700sqft</p>
                                             </td>
                                           </tr>
                                         </table>
@@ -620,9 +560,7 @@ googleFonts: "Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
                                               </table>
                                             </td>
                                             <td class="text-left">
-                                              <multiline>
-                                                <p class="m-0 text-15 leading-28 text-white all:font-sans">Nicely Updated Kitchen</p>
-                                              </multiline>
+                                              <p class="m-0 text-15 leading-28 text-white all:font-sans">Nicely Updated Kitchen</p>
                                             </td>
                                           </tr>
                                         </table>
@@ -642,9 +580,7 @@ googleFonts: "Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
                                               </table>
                                             </td>
                                             <td class="text-left">
-                                              <multiline>
-                                                <p class="m-0 text-15 leading-28 text-white all:font-sans">Newly Updated Bathroom</p>
-                                              </multiline>
+                                              <p class="m-0 text-15 leading-28 text-white all:font-sans">Newly Updated Bathroom</p>
                                             </td>
                                           </tr>
                                         </table>
@@ -664,9 +600,7 @@ googleFonts: "Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
                                               </table>
                                             </td>
                                             <td class="text-left">
-                                              <multiline>
-                                                <p class="m-0 text-15 leading-28 text-white all:font-sans">Hardwood Flooring</p>
-                                              </multiline>
+                                              <p class="m-0 text-15 leading-28 text-white all:font-sans">Hardwood Flooring</p>
                                             </td>
                                           </tr>
                                         </table>
@@ -686,9 +620,7 @@ googleFonts: "Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
                                               </table>
                                             </td>
                                             <td class="text-left">
-                                              <multiline>
-                                                <p class="m-0 text-15 leading-28 text-white all:font-sans">Large King Sized Bedroom</p>
-                                              </multiline>
+                                              <p class="m-0 text-15 leading-28 text-white all:font-sans">Large King Sized Bedroom</p>
                                             </td>
                                           </tr>
                                         </table>
@@ -702,9 +634,7 @@ googleFonts: "Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
                         </tr>
                         <tr>
                           <td class="pb-35 text-left">
-                            <multiline>
-                              <p class="m-0 text-15 leading-28 text-white all:font-sans">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                            </multiline>
+                            <p class="m-0 text-15 leading-28 text-white all:font-sans">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
                           </td>
                         </tr>
                         <tr>
@@ -715,8 +645,8 @@ googleFonts: "Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
                                   <table class="w-full">
                                     <tr>
                                       <td class="py-10 px-20 leading-22 text-left font-bold text-white">
-                                        <span class="text-18"><singleline>$2,000</singleline></span>
-                                        <span class="text-14 font-normal"><singleline>/mo</singleline></span>
+                                        <span class="text-18">$2,000</span>
+                                        <span class="text-14 font-normal">/mo</span>
                                       </td>
                                     </tr>
                                   </table>
@@ -725,9 +655,7 @@ googleFonts: "Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
                                   <table>
                                     <tr>
                                       <th class="bg-blue-le-100 hover:bg-blue-le-700 rounded-12" style="mso-padding-alt: 12px 25px;">
-                                        <multiline>
-                                          <a href="https://example.com" class="block py-12 px-25 text-14 leading-20 no-underline text-white">MORE DETAILS</a>
-                                        </multiline>
+                                        <a href="https://example.com" class="block py-12 px-25 text-14 leading-20 no-underline text-white">MORE DETAILS</a>
                                       </th>
                                     </tr>
                                   </table>
@@ -740,133 +668,118 @@ googleFonts: "Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
                           <td class="h-40 sm:hidden"></td>
                         </tr>
                       </table>
-                    </layout>
-                    <!-- END Article 3 -->
-                  </repeater>
-                </td>
-              </tr>
-            </table>
-            <!-- END Main -->
+                      <!-- END Article 3 -->
+                    </td>
+                  </tr>
+                </table>
+                <!-- END Main -->
 
-            <repeater>
-              <!-- Contact Us -->
-              <layout label="Contact Us">
+                <!-- Contact Us -->
                 <table class="w-full">
                   <tr>
                     <td class="p-50 rounded-12 sm:py-30 sm:px-15 bg-blue-le-100">
                       <table class="w-full">
                         <tr>
                           <td class="pb-18">
-                            <h3 class="m-0 text-22 leading-28 font-semibold text-white">
-                              <singleline>
-                                Do not hesitate to contact me in case you have any questions regarding these offers.
-                              </singleline>
-                            </h3>
+                            <h3 class="m-0 text-22 leading-28 font-semibold text-white">Do not hesitate to contact me in case you have any questions regarding these offers.</h3>
                           </td>
                         </tr>
                         <tr>
                           <td class="text-15 leading-28 text-white all:font-sans">
-                            <multiline>
-                              <p class="m-0">
-                                You can call me anytime on <a href="tel:12345678910" class="font-bold no-underline text-white hover:underline">123-4567-8910</a>
-                              </p>
-                            </multiline>
-                            <multiline>
-                              <p class="m-0">
-                                or email me at <a href="mailto:andew@luxuryestates.com" target="_blank" class="font-bold no-underline text-white hover:underline">andrew@luxuryestates.com</a>
-                              </p>
-                            </multiline>
+                            <p class="m-0">
+                              You can call me anytime on <a href="tel:12345678910" class="font-bold no-underline text-white hover:underline">123-4567-8910</a>
+                            </p>
+                            <p class="m-0">
+                              or email me at <a href="mailto:andew@luxuryestates.com" target="_blank" class="font-bold no-underline text-white hover:underline">andrew@luxuryestates.com</a>
+                            </p>
                           </td>
                         </tr>
                       </table>
                     </td>
                   </tr>
                 </table>
-              </layout>
-              <!-- END Contact Us -->
-            </repeater>
+                <!-- END Contact Us -->
 
-            <!-- Footer -->
-            <table class="w-full">
-              <tr>
-                <td class="p-50 sm:py-30 sm:px-15">
-                  <table class="w-full">
-                    <tr>
-                      <td class="pb-32">
-                        <table class="w-full">
-                          <tr>
-                            <th class="w-170 sm:block sm:w-full sm:pb-25 sm:text-center">
-                              <a href="https://example.com" target="_blank" class="no-underline">
-                                <img editable src="luxury-estates/logo.png" width="160" alt="LuxuryEstates">
-                              </a>
-                            </th>
-                            <th class="sm:block sm:w-full font-normal">
-                              <table class="w-full sm:w-auto sm:mx-auto">
-                                <tr>
-                                  <td align="right">
-                                    <table>
-                                      <tr>
-                                        <td class="px-12">
-                                          <a href="https://example.com" class="no-underline">
-                                            <img editable src="luxury-estates/ico_facebook.jpg" width="34" height="34" alt="">
-                                          </a>
-                                        </td>
-                                        <td class="px-12">
-                                          <a href="https://example.com" class="no-underline">
-                                            <img editable src="luxury-estates/ico_twitter.jpg" width="34" height="34" alt="">
-                                          </a>
-                                        </td>
-                                        <td class="px-12">
-                                          <a href="https://example.com" class="no-underline">
-                                            <img editable src="luxury-estates/ico_instagram.jpg" width="34" height="34" alt="">
-                                          </a>
-                                        </td>
-                                        <td class="px-12 pr-0">
-                                          <a href="https://example.com" class="no-underline">
-                                            <img editable src="luxury-estates/ico_linkedin.jpg" width="34" height="34" alt="">
-                                          </a>
-                                        </td>
-                                      </tr>
-                                    </table>
-                                  </td>
-                                </tr>
-                              </table>
-                            </th>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <table class="w-full">
-                          <tr>
-                            <th class="w-370 sm:block sm:w-full sm:pb-25 text-left sm:text-center font-normal">
-                              <multiline>
-                                <p class="m-0 text-14 leading-28 text-gray-le-500">
-                                  LuxuryEstates - Free HTML Email Template
-                                  <br>
-                                  East Pixel Bld. 99, Creative City 9000, Republic of Design
-                                </p>
-                              </multiline>
-                            </th>
-                            <th class="w-160 sm:block sm:w-full sm:text-center align-bottom text-right font-normal">
-                              <p class="m-0 text-14 leading-28 text-gray-le-500">
-                                <unsubscribe class="text-gray-le-500 underline hover:no-underline">Unsubscribe</unsubscribe>
-                              </p>
-                            </th>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-            <!-- END Footer -->
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
-{% endblock %}
+                <!-- Footer -->
+                <table class="w-full">
+                  <tr>
+                    <td class="p-50 sm:py-30 sm:px-15">
+                      <table class="w-full">
+                        <tr>
+                          <td class="pb-32">
+                            <table class="w-full">
+                              <tr>
+                                <th class="w-170 sm:block sm:w-full sm:pb-25 sm:text-center">
+                                  <a href="https://example.com" target="_blank" class="no-underline">
+                                    <img src="luxury-estates/logo.png" width="160" alt="LuxuryEstates">
+                                  </a>
+                                </th>
+                                <th class="sm:block sm:w-full font-normal">
+                                  <table class="w-full sm:w-auto sm:mx-auto">
+                                    <tr>
+                                      <td align="right">
+                                        <table>
+                                          <tr>
+                                            <td class="px-12">
+                                              <a href="https://example.com" class="no-underline">
+                                                <img src="luxury-estates/ico_facebook.jpg" width="34" height="34">
+                                              </a>
+                                            </td>
+                                            <td class="px-12">
+                                              <a href="https://example.com" class="no-underline">
+                                                <img src="luxury-estates/ico_twitter.jpg" width="34" height="34">
+                                              </a>
+                                            </td>
+                                            <td class="px-12">
+                                              <a href="https://example.com" class="no-underline">
+                                                <img src="luxury-estates/ico_instagram.jpg" width="34" height="34">
+                                              </a>
+                                            </td>
+                                            <td class="px-12 pr-0">
+                                              <a href="https://example.com" class="no-underline">
+                                                <img src="luxury-estates/ico_linkedin.jpg" width="34" height="34">
+                                              </a>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </th>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <table class="w-full">
+                              <tr>
+                                <th class="w-370 sm:block sm:w-full sm:pb-25 text-left sm:text-center font-normal">
+                                  <p class="m-0 text-14 leading-28 text-gray-le-500">
+                                    LuxuryEstates - Free HTML Email Template
+                                    <br>
+                                    East Pixel Bld. 99, Creative City 9000, Republic of Design
+                                  </p>
+                                </th>
+                                <th class="w-160 sm:block sm:w-full sm:text-center align-bottom text-right font-normal">
+                                  <p class="m-0 text-14 leading-28 text-gray-le-500">
+                                    <a href="https://example.com" target="_blank" class="text-gray-le-500 underline hover:no-underline">Unsubscribe</a>
+                                  </p>
+                                </th>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+                <!-- END Footer -->
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </block>
+</extends>

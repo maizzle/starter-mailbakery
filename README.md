@@ -21,7 +21,7 @@ npm install -g @maizzle/cli
 Scaffold a new project with this starter:
 
 ```sh
-maizzle new https://github.com/maizzle/starter-mailbakery.git && cd starter-mailbakery
+maizzle new https://github.com/maizzle/starter-mailbakery.git
 ```
 
 Develop locally:
@@ -37,12 +37,6 @@ maizzle build mailchimp
 ```
 
 Available version keywords: `html`, `mailchimp`, `campaign-monitor`. See [config docs](https://maizzle.com/docs/environments/).
-
-Build all versions:
-
-```sh
-maizzle build all
-```
 
 ## What is Maizzle?
 

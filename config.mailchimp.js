@@ -3,23 +3,18 @@ module.exports = {
     destination: {
       path: 'dist/mailchimp',
     },
-    layout: 'src/layouts/mailchimp.njk',
     templates: {
-      source: 'src/templates/mailchimp',
+      root: 'src/templates/mailchimp',
     },
   },
-
   inlineCSS: {
     enabled: true,
   },
-
-  cleanup: {
-    removeUnusedCSS: {
-      enabled: true,
-    },
-  },
-
   prettify: {
     enabled: true,
+  },
+  removeUnusedCSS: {
+    enabled: true,
+    doNotRemoveHTMLCommentsWhoseOpeningTagContains: ['[if', '[endif', '*|'],
   },
 }
