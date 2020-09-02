@@ -1,10 +1,10 @@
 module.exports = {
   build: {
-    destination: {
-      path: 'dist/html',
-    },
     templates: {
-      root: 'src/templates/html',
+      source: 'src/templates/html',
+      destination: {
+        path: 'dist/html',
+      },
     },
   },
   inlineCSS: {

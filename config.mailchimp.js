@@ -1,10 +1,10 @@
 module.exports = {
   build: {
-    destination: {
-      path: 'dist/mailchimp',
-    },
     templates: {
-      root: 'src/templates/mailchimp',
+      source: 'src/templates/mailchimp',
+      destination: {
+        path: 'dist/mailchimp',
+      },
     },
   },
   inlineCSS: {

@@ -12,18 +12,18 @@
 module.exports = {
   baseImageURL: 'https://res.cloudinary.com/maizzle/image/upload/v1574710646/mb/',
   build: {
-    assets: {
-      source: 'src/assets/images',
-      destination: 'images',
-    },
-    destination: {
-      path: 'build_local',
-    },
     tailwind: {
       css: 'src/assets/css/main.css',
     },
     templates: {
-      root: 'src/templates',
+      source: 'src/templates',
+      destination: {
+        path: 'build_local',
+      },
+      assets: {
+        source: 'src/assets/images',
+        destination: 'images',
+      },
     },
   },
 }

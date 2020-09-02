@@ -1,10 +1,10 @@
 module.exports = {
   build: {
-    destination: {
-      path: 'dist/campaign-monitor',
-    },
     templates: {
-      root: 'src/templates/campaign-monitor',
+      source: 'src/templates/campaign-monitor',
+      destination: {
+        path: 'dist/campaign-monitor',
+      },
     },
   },
   inlineCSS: {
