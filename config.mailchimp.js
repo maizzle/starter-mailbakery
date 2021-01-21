@@ -7,7 +7,9 @@ module.exports = {
       },
     },
   },
-  inlineCSS: true,
+  inlineCSS: {
+    mergeLonghand: true
+  },
   prettify: true,
   removeUnusedCSS: {
     doNotRemoveHTMLCommentsWhoseOpeningTagContains: ['[if', '[endif', '*|'],
