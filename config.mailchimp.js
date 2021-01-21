@@ -7,14 +7,9 @@ module.exports = {
       },
     },
   },
-  inlineCSS: {
-    enabled: true,
-  },
-  prettify: {
-    enabled: true,
-  },
+  inlineCSS: true,
+  prettify: true,
   removeUnusedCSS: {
-    enabled: true,
     doNotRemoveHTMLCommentsWhoseOpeningTagContains: ['[if', '[endif', '*|'],
   },
 }
