@@ -1,5 +1,3 @@
-/*! purgecss start ignore */
-
 body {
   @apply w-full m-0 p-0;
   word-break: break-word;
@@ -10,4 +8,3 @@ img {
   border: 0;
   @apply max-w-full leading-full align-middle;
 }
-/*! purgecss end ignore */
